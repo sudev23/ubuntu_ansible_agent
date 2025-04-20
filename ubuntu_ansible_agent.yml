@@ -7,6 +7,7 @@ services:
     image: ubuntu-ansible-agent-node-image:latest
     ports:
       - "2224:22"
+      - "8083:80"
     environment:
       - MY_ENV=agent
     stdin_open: true
